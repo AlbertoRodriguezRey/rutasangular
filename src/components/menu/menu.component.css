@@ -1,0 +1,30 @@
+#id {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  background-color: #333;
+  padding: 1rem;
+}
+
+#id li {
+  display: inline-block;
+}
+
+#id a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#id a:hover {
+  background-color: #555;
+}
+
+#id a.active {
+  background-color: #0066cc;
+}
