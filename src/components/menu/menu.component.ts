@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css',
 })
 export class MenuComponent {
+  randomNumbers: number[] = Array.from({ length: 6 }, () => Math.floor(Math.random() * 100));
   constructor() {
 
   }

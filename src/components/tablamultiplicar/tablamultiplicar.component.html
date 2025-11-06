@@ -1,0 +1,27 @@
+<div>
+    <h1>Tabla de multiplicar routing</h1>
+
+    <button (click)="goToHome()">
+        Volver al home
+    </button>
+    <button (click)="redirect(3)">Tabla del 3</button>
+    <button (click)="redirect(7)">Tabla del 7</button>
+    <button (click)="redirect(12)">Tabla del 12</button>
+    
+    @if (numero) {
+        <h2>
+            Tabla de multiplicar del {{ numero }}
+        </h2>
+        <ul>
+            @for (i of numeros; track i) {
+                <li>
+                    {{ numero }} x {{ i }} = {{ numero * i }}
+                </li>
+            }
+        </ul>
+    }@else {
+        <h2>
+            No hemos recibido parametros
+        </h2>
+    }
+</div>

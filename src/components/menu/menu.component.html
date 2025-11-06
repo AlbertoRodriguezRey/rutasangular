@@ -9,8 +9,21 @@
         <li>
             <a [routerLink]="['/musica']">Musica</a>
         </li>
+        @for (num of randomNumbers; track num) {
+            <li>
+                <a [routerLink]="['/tablamultiplicar', num]">
+                    Tabla aleatoria {{ num }}
+                </a>
+            </li>
+        }
         <li>
-            <a [routerLink]="['/numerodoble']">Numero Doble</a>"  
+            <a [routerLink]="['/numerodoble']">Numero Doble</a>
+        </li>
+        <li>
+            <a [routerLink]="['/numerodoble/77']">Numero Doble 77</a> 
+        </li>
+        <li>
+            <a [routerLink]="['/numerodoble/7']">Numero Doble 7</a>"  
         </li>
     </ul>
 </div>

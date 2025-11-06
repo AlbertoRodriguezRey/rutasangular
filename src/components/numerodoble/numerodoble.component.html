@@ -1,1 +1,21 @@
-<p>numerodoble.component works!</p>
+<div>
+    <h1>Doble routing</h1>
+
+    <button (click)="goToHome()">
+        Volver al home
+    </button>
+    <button (click)="redirect(44)">Numero 44</button>
+    <button (click)="redirect(55)">Numero 55</button>
+    <button (click)="redirect(14)">Numero 14</button>
+    
+    
+    @if (numero) {
+        <h2 style="color: blue;">
+            El doble de {{ numero }} es {{ doble }}
+        </h2>
+    }@else {
+        <h2 style="color: red;">
+            No hemos recibido parametros
+        </h2>
+    }
+</div>

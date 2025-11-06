@@ -6,6 +6,8 @@ import { RouterModule, Routes } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 import { NotfoundComponent } from "../components/notfound/notfound.component";
 import { NumerodobleComponent } from "../components/numerodoble/numerodoble.component";
+import { TablamultiplicarComponent } from "../components/tablamultiplicar/tablamultiplicar.component";
+
 
 
 //NECESITAMOS UN ARRAY CON LAS RUTAS, DICHO ARRAY SERA DE TIPO Routes
@@ -15,6 +17,8 @@ const appRoutes: Routes = [
     {path: "cine", component: CineComponent},
     {path: "musica", component: MusicaComponent},
     {path: "numerodoble", component: NumerodobleComponent},
+    {path: "numerodoble/:numero", component: NumerodobleComponent},
+    {path: "tablamultiplicar/:numero", component: TablamultiplicarComponent},
     {path: "**", component: NotfoundComponent} //RUTA DE FALLBACK
 ]
 //DESDE ESTA CLASE DEBEMOS EXPORTA NUESTRO ARRAY DE ROUTES COMO PROVIDER
